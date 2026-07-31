@@ -477,6 +477,7 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
+<img width="637" height="177" alt="image" src="https://github.com/user-attachments/assets/ba602f0b-3807-4782-b01f-ee49d9360ad0" />
  
 cat << stop > herecheck.txt
 ```
@@ -489,6 +490,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+<img width="632" height="287" alt="image" src="https://github.com/user-attachments/assets/e177beae-cf9b-4d3b-b3b4-9429ccbfe3c8" />
 
 cat < scriptest.sh 
 ```bash
@@ -527,23 +529,33 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+<img width="798" height="415" alt="image" src="https://github.com/user-attachments/assets/323294cc-1194-4dfd-9103-be1f098eed75" />
+
 ls file1
 ## OUTPUT
 
+<img width="803" height="86" alt="image" src="https://github.com/user-attachments/assets/79f7f1c1-42c8-479f-a6ed-8fdf1f042d37" />
+
 echo $?
 ## OUTPUT 
+
+<img width="640" height="75" alt="image" src="https://github.com/user-attachments/assets/a6907e99-53d9-49b7-99a7-2c9646dcdd46" />
+
+
 ./one
 bash: ./one: Permission denied
- 
 echo $?
-## OUTPUT 
+## OUTPUT
+
+<img width="628" height="207" alt="image" src="https://github.com/user-attachments/assets/e93b9886-9f7d-4ffb-b98c-251e03d87324" />
+
  
 abcd
  
 echo $?
  ## OUTPUT
 
+<img width="628" height="207" alt="image" src="https://github.com/user-attachments/assets/b9c16fc3-169a-4c7b-b515-1ae8e5a3b07e" />
 
  
 # mis-using string comparisons
@@ -567,8 +579,7 @@ cat strcomp.sh
 \#!/bin/bash
 val1=baseball
 val2=hockey
-if [ $val1 \> $val2 ]
-then
+if [ $val1 \> $val
 echo "$val1 is greater than $val2"
 else
 echo "$val1 is less than $val2"
@@ -576,6 +587,7 @@ fi
 ```
 ##OUTPUT
 
+<img width="627" height="207" alt="image" src="https://github.com/user-attachments/assets/e8ce490a-4b4d-487d-9e95-9e10a884c483" />
 
 
 chmod 755 strcomp.sh
@@ -583,6 +595,7 @@ chmod 755 strcomp.sh
 ./strcomp.sh 
 ## OUTPUT
 
+<img width="627" height="207" alt="image" src="https://github.com/user-attachments/assets/e8ce490a-4b4d-487d-9e95-9e10a884c483" />
 
 # check file ownership
 cat < psswdperm.sh 
@@ -609,6 +622,9 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+<img width="697" height="206" alt="image" src="https://github.com/user-attachments/assets/6e635305-dcb0-41ae-96c9-eb7cd858165f" />
+
 
 # check if with file location
 cat>ifnested.sh 
@@ -644,7 +660,7 @@ echo “Yes,$HOME it is a file!”
 else
 echo “No,$HOME it is not a file!”
 if [ -f $HOME/.bash_history ]
-then
+thenchmod 
 echo “But $HOME/.bash_history is a file!”
 fi
 fi
@@ -656,6 +672,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
+<img width="712" height="233" alt="image" src="https://github.com/user-attachments/assets/55a4b66c-dbb5-437b-8c04-5d88474c48e2" />
 
 
 # using numeric test comparisons
@@ -699,6 +716,9 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+
+<img width="701" height="236" alt="image" src="https://github.com/user-attachments/assets/22117bdc-0bb4-40ab-a778-e83ffce0f7a3" />
+
 
 # check if a file
 cat > ifnested.sh 
